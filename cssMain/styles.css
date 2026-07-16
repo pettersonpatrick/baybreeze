@@ -61,3 +61,47 @@ a img {
 }
 
 /* END RESET */
+/* START PROJECT STYLES */
+
+.mainContainer {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header       header       header       header"
+    "presentation presentation presentation presentation"
+    "services     services     jobber       jobber"
+    "marketing    marketing    jobber       jobber"
+    "marketing    marketing    jobber       jobber"
+    "footer       footer       footer       footer";
+}
+
+.headerContainer {
+    background-color: rgb(245, 247, 248);
+    grid-area: header;
+}
+
+.presentationContainer {
+    background-color: rgb(4, 20, 103);
+    grid-area: presentation;
+}
+
+.marketingContainer {
+    background-color: rgb(207, 219, 211);
+    grid-area: marketing;
+}
+
+.jobberContainer {
+    background-color: rgb(48, 151, 38);
+    grid-area: jobber;
+}
+
+.servicesContainer {
+    background-color: rgb(231, 128, 240);
+    grid-area: services;
+}
+
+.footer {
+    background-color: rgb(5, 2, 45);
+    grid-area: footer;
+}
