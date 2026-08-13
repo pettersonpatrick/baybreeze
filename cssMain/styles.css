@@ -81,7 +81,7 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
     "footer   footer        footer";
 
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 8vh 86vh 6vh;
+    grid-template-rows: 10vh 84vh 6vh;
 }
 
 /* HEADER STYLES */
@@ -90,11 +90,14 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
     flex-grow: 1;
     gap: 10px;
     justify-content: space-between;
+    font-size: 1.2rem;
     background-color: rgb(16, 49, 90);
+    /* background-color: rgb(255, 255, 255); */
     color: rgb(255, 255, 255);
-    /* border-radius: 0 0 1em 0; */
     grid-area: header;
     align-items: center;
+    border-bottom: 2px solid  rgb(255, 255, 255);
+    
    
 }
 
@@ -109,7 +112,7 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
 
 .headerLinks {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-basis: 100px;
     flex-grow: 15;
     gap: 1em;
@@ -117,30 +120,42 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
     color: rgb(255, 255, 255);
 }
 
-.aboutLink{
-    /* background-color: gray; */
-    flex-grow: 8;  
-    
+.servicesLink {
+    /* background-color: lightcoral; */
+    flex-grow: 9;
+    justify-content: end;
 }
 
-.servicesLink{
-    /* background-color: lightcoral; */
-    flex-grow: 1;    
-
+.aboutLink{
+    /* background-color: gray; */
+    flex-grow: 1;
+    
 }
 
 .estimateLink{
     /* background-color: lightskyblue; */
     flex-grow: 1;
-   
+      
 }
+
+.aboutLink:hover {
+    text-decoration: underline;
+    
+}
+
+.servicesLink:hover {
+    text-decoration: underline;
+}
+
+.estimateLink:hover {
+    text-decoration: underline;
+}
+
 
 /* .emptySpace {
     background-color: brown;
     flex-grow: 8;
 } */
-
-
 
 #logo {
     width: 75px;
@@ -149,28 +164,56 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
 
 }
 
+/* PRESENTATION STYLES */
+
 .presentationContainer {
-    background-color:rgb(255, 255, 255);
-    grid-area: presentation;
-    font-size: 7em;
-    color: rgb(10, 39, 78);
+    display:flex;
+    flex-grow: 1;   
+    /* border: 2px solid red; */
+    height: 70vh;
+    padding: 2em 8em 2em 8em;
+    margin: 1em;
+    grid-area: presentation;    
+    
 }
 
-/* .marketingContainer {
-    background-color: rgb(207, 219, 211);
-    grid-area: marketing;
-} */
+.marketingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 2;
+    color: rgb(10, 39, 78);
+    font-size: 6em;
+    padding: 0.5em 0 0 0.5em;
+    /* border: 1px solid blue; */
+    background-color: rgba(38, 20, 41, 0.05);
+    border-radius: 0.3em;
+    /* height: 70vh;
+    width: 50vw; */
+}
 
-/* .jobberContainer {
-    background-color: rgb(48, 151, 38);
-    grid-area: jobber;
-} */
+.moreBtn {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: none;
+    color: white;
+    background-color: rgb(16, 49, 90);
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+.moreBtn:hover {
+    font-size: 50px;
 
-/* .servicesContainer {
-    background-color: rgb(231, 128, 240);
-    grid-area: services;
-} */
+}
 
+
+
+
+/* FOOTER STYLES */
 .footer {
     background-color: rgb(16, 49, 90);
     color: rgb(255, 255, 255);
