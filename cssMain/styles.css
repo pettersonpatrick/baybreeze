@@ -62,9 +62,17 @@ a img {
 
 /* END RESET */
 /* START PROJECT STYLES */
+/* 
+colorPallette{
+    Dark Blue: RGB (10, 39, 78) - Used for the text and the wave icon details.
+
+Off-White: RGB (255, 255, 255) - Used for the main background.
+
+Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on the left.
+} */
 
 .mainContainer {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     display: grid;
     grid-template-areas: 
@@ -72,20 +80,80 @@ a img {
     "left     presentation  right"
     "footer   footer        footer";
 
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 10vh 83vh 7vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 8vh 86vh 6vh;
 }
 
+/* HEADER STYLES */
 .headerContainer {
-    background-color: whitesmoke;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: rgb(16, 49, 90);
+    color: rgb(255, 255, 255);
+    /* border-radius: 0 0 1em 0; */
     grid-area: header;
+    align-items: center;
+   
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;   
+
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: right;
+    flex-basis: 100px;
+    flex-grow: 15;
+    gap: 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.aboutLink{
+    /* background-color: gray; */
+    flex-grow: 8;  
+    
+}
+
+.servicesLink{
+    /* background-color: lightcoral; */
+    flex-grow: 1;    
+
+}
+
+.estimateLink{
+    /* background-color: lightskyblue; */
+    flex-grow: 1;
+   
+}
+
+/* .emptySpace {
+    background-color: brown;
+    flex-grow: 8;
+} */
+
+
+
+#logo {
+    width: 75px;
+    height: auto;
+    /* align-items: center; */
+
 }
 
 .presentationContainer {
-    background-color: whitesmoke;
+    background-color:rgb(255, 255, 255);
     grid-area: presentation;
-    font-size: 10em;
-    color: black;
+    font-size: 7em;
+    color: rgb(10, 39, 78);
 }
 
 /* .marketingContainer {
@@ -104,6 +172,7 @@ a img {
 } */
 
 .footer {
-    background-color: whitesmoke;
+    background-color: rgb(16, 49, 90);
+    color: rgb(255, 255, 255);
     grid-area: footer;
 }
