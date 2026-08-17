@@ -71,128 +71,127 @@ Off-White: RGB (255, 255, 255) - Used for the main background.
 Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on the left.
 } */
 
-.mainContainer {
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header   header        header"
-    "left     presentation  right"
-    "footer   footer        footer";
-
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 10vh 84vh 6vh;
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;  
+    margin: 0;
+    background-color: rgb(255, 255, 255); 
 }
 
 /* HEADER STYLES */
 .headerContainer {
-    display: flex;
-    flex-grow: 1;
-    gap: 10px;
-    justify-content: space-between;
-    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: 10dvh;
+    grid-template-areas: 
+                        'links logo';
     background-color: rgb(16, 49, 90);
-    /* background-color: rgb(255, 255, 255); */
     color: rgb(255, 255, 255);
-    grid-area: header;
-    align-items: center;
-    border-bottom: 2px solid  rgb(255, 255, 255);
-    
+    font-size: 1.2rem;
    
 }
 
-.logoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-grow: 1;   
 
+/* NAV STYLES */
+.headerNav ul {
+    display: grid;
+    align-items: end;
+    padding: 1em;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 6dvh;
+    grid-template-areas: 'a b c d';
+    list-style-type: none;
+    
 }
 
-.headerLinks {
-    display: flex;
-    justify-content: center;
-    flex-basis: 100px;
-    flex-grow: 15;
-    gap: 1em;
+.navLink {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.servicesLink {
+.navLink:hover {
+    text-decoration: underline;
+    
+}
+
+#servicesLink {
     /* background-color: lightcoral; */
-    flex-grow: 9;
-    justify-content: end;
+    grid-area: b;
 }
 
-.aboutLink{
+#aboutLink {
     /* background-color: gray; */
-    flex-grow: 1;
+    grid-area: c;
     
 }
 
-.estimateLink{
+#estimateLink {
     /* background-color: lightskyblue; */
-    flex-grow: 1;
-      
+    grid-area: d;
+ 
 }
 
-.aboutLink:hover {
-    text-decoration: underline;
-    
-}
-
-.servicesLink:hover {
-    text-decoration: underline;
-}
-
-.estimateLink:hover {
-    text-decoration: underline;
-}
-
-
-/* .emptySpace {
-    background-color: brown;
-    flex-grow: 8;
-} */
-
-#logo {
-    width: 75px;
+.logoContainer img {
+    padding: 1em;
+    width: 100%;
+    max-width: 100px;
     height: auto;
-    /* align-items: center; */
+    transition: transform 0.3s ease;
+    grid-area: logo;
+    cursor: pointer;
 
 }
 
-/* PRESENTATION STYLES */
+.logoContainer img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
-.presentationContainer {
-    display:flex;
-    flex-grow: 1;   
-    /* border: 2px solid red; */
-    height: 70vh;
-    padding: 2em 8em 2em 8em;
-    margin: 1em;
-    grid-area: presentation;    
-    
+/* MAIN CONTAINER STYLES */
+.mainContainer {
+    flex-grow: 1;
 }
 
 .marketingContainer {
+    grid-area: marketing;
+
+}
+
+
+/* MAIN PAGE STYLES */
+.presentationContainer {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    grid-template-areas: 
+        'left marketing right';
+    padding: 40px 20px;
+
+}
+
+.marketingContainer {
+    grid-area: marketing;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 6 / 6;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 2;
+    position: relative;
+    overflow: hidden;
     color: rgb(10, 39, 78);
     font-size: 6em;
-    padding: 0.5em 0 0 0.5em;
+    padding: 40px;
     /* border: 1px solid blue; */
     background-color: rgba(38, 20, 41, 0.05);
-    border-radius: 0.3em;
-    /* height: 70vh;
-    width: 50vw; */
+    border-radius: 16px;
+   
 }
 
 .moreBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
     width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -210,12 +209,9 @@ Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on 
 
 }
 
-
-
-
 /* FOOTER STYLES */
 .footer {
     background-color: rgb(16, 49, 90);
+    padding: 40px 20px;
     color: rgb(255, 255, 255);
-    grid-area: footer;
 }
