@@ -76,7 +76,12 @@ body {
     display: flex;
     flex-direction: column;  
     margin: 0;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
+    &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  } 
 }
 
 /* HEADER STYLES */
@@ -159,7 +164,7 @@ body {
 }
 
 
-/* MAIN PAGE STYLES */
+/* PRESENTATION CONTAINER */
 .presentationContainer {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
@@ -182,7 +187,6 @@ body {
     color: rgb(10, 39, 78);
     font-size: 6em;
     padding: 40px;
-    /* border: 1px solid blue; */
     background-color: rgba(38, 20, 41, 0.05);
     border-radius: 16px;
    
@@ -195,7 +199,6 @@ body {
     width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
-    display: grid;
     place-items: center;
     border: none;
     color: white;
@@ -209,9 +212,84 @@ body {
 
 }
 
+.lobbyContainer {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    grid-template-areas: 
+        'left lobby right';
+}
+
+.box {
+    grid-area: lobby;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 20px;
+
+}
+
+.lobbyCards {
+    border-radius: 12px;
+    padding: 20px 20px;
+    background-color: #E8E8E8;
+    height: 30dvh;
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+    justify-self: center;
+    color: rgb(10, 39, 78);
+    font-size: 2em;
+
+}
+
+.lobbyCards a {
+    text-decoration: none;
+    color: rgb(10, 39, 78);
+}
+
+.card-1 {
+    flex-basis: 60%;
+    order: 1;
+}
+.card-2 {
+    flex-basis: 30%;
+    order: 2;
+}
+.card-3 {
+    height: 40dvh;
+    flex-basis: 30%;
+    order: 3;
+}
+.card-4 {
+    height: 40dvh;
+    flex-basis: 60%;
+    order: 4;
+}
+.card-5 {
+    height: 70dvh;
+    flex-basis: 30%;
+    order: 5;
+}
+.card-6 {
+    height: 70dvh;
+    flex-basis: 60%;
+    order: 6;
+}
+
 /* FOOTER STYLES */
 .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgb(16, 49, 90);
     padding: 40px 20px;
     color: rgb(255, 255, 255);
+    font-size: 1em;
 }
+
