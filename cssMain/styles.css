@@ -251,7 +251,7 @@ body {
 .lobbyCards {
     border-radius: 12px;
     padding: 20px 20px;
-    background-color: #E8E8E8;
+    background-color: rgba(232, 232, 232, 1);
     height: 30dvh;
     display: flex;
     flex-direction: column;  
@@ -270,7 +270,16 @@ body {
 .card-1 {
     flex-basis: 60%;
     order: 1;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
 }
+
+#lcard1 {
+    height:  250px;
+    width:250px;
+}
+
 .card-2 {
     flex-basis: 30%;
     order: 2;
