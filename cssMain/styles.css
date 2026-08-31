@@ -86,6 +86,7 @@ body {
 
 /* HEADER STYLES */
 .headerContainer {
+    font-family: "Inter", sans-serif;
     display: grid;
     grid-template-columns: 8fr 1fr;
     grid-template-rows: 10dvh;
@@ -111,6 +112,7 @@ body {
 }
 
 .navLink {
+    font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -175,6 +177,8 @@ body {
 }
 
 .marketingContainer {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
     grid-area: marketing;
     justify-self: center;
     width: 100%;
@@ -218,6 +222,7 @@ body {
 }
 
 .lobbyContainer {
+    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -249,6 +254,7 @@ body {
 }
 
 .lobbyCards {
+    font-weight: bold;
     border-radius: 12px;
     padding: 20px 20px;
     background-color: rgba(232, 232, 232, 1);
@@ -272,6 +278,7 @@ body {
     flex-basis: 60%;
     order: 1;
     display: flex;   
+    
 }
 
 #lcardimg1 {
@@ -286,15 +293,19 @@ body {
 .card-2 {
     flex-basis: 30%;
     order: 2;
+
 }
 
 #lcardimg2 {
-    height:  200px;
-    width: 200px;
-    /* border-radius: 50%; */
-    /* object-fit: cover; */
+    height:  375px;
+    width: 375px;
+    border-radius: 50%;
+    object-fit: cover;
     position:absolute;
-    margin: 3em 1em 3em 1em;
+    /* margin: 3em 1em 1em 1em; */
+    top: 4.1em;
+    right: 0.2em;
+    
 }
 
 .card-3 {
@@ -357,6 +368,8 @@ body {
 
 /* FOOTER STYLES */
 .footer {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
