@@ -94,7 +94,7 @@ body {
                         'links logo';
     background-color: rgb(16, 49, 90);
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
    
 }
 
@@ -115,10 +115,14 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease-in-out;
+    
 }
 
 .navLink:hover {
-    text-decoration: underline;
+    background-color: rgba(79, 140, 175, 0.25);    
     
 }
 
@@ -170,6 +174,7 @@ body {
 .presentationContainer {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    height: 75dvh;
     grid-template-areas: 
         'left marketing right';
     padding: 40px 20px;
@@ -221,6 +226,8 @@ body {
 
 }
 
+
+/* LOBBY CONTAINER & CARDS */
 .lobbyContainer {
     font-family: "Inter", sans-serif;
     display: flex;
@@ -258,7 +265,7 @@ body {
     border-radius: 12px;
     padding: 20px 20px;
     background-color: rgba(232, 232, 232, 1);
-    height: 30dvh;
+    height: 35dvh;
     display: flex;
     flex-direction: column;  
     position: relative;
@@ -320,7 +327,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     position:absolute;
-    margin: 3em 0em 3em 3.3em;
+    margin: 4em 0em 3em 4em;
 
 }
 /* FIX SLOW GROW */
@@ -354,16 +361,61 @@ body {
 
 
 
-.card-5 {
-    height: 70dvh;
-    flex-basis: 30%;
-    order: 5;
-}
-
 .card-6 {
     height: 70dvh;
     flex-basis: 60%;
     order: 6;
+}
+
+.requestContainer {
+    display: grid;
+    height: 95dvh;
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-template-areas: 'a b';
+}
+
+
+.jobberReq {
+    grid-area: b;
+    height: 100%; 
+    overflow-y: auto;
+    scrollbar-width:none;  
+}
+
+.card-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: transparent;
+    height: 80dvh;
+    width: 23dvw;
+    flex-basis: 30%;
+    order: 5;
+    
+}
+
+.card-5 p{
+    top: 3em;
+    /* border: solid 1px red; */
+    font-size: 0.5em;
+    font-weight: normal;
+    text-align: left;
+    color: black;
+}
+
+#lcard5img {
+    height:  350px;
+    width: 350px;
+    border-radius: 50%;
+    /* object-fit: cover;
+    position:absolute;
+    margin: 10em 0 0 0; */
+  
+}
+
+#callLink5 {
+    font-size: 0.4em;
+    font-weight: bold;
 }
 
 /* FOOTER STYLES */
@@ -371,6 +423,7 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: bold;
     display: flex;
+    min-height: 20dvh;
     flex-direction: row;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
