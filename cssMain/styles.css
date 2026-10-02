@@ -201,6 +201,40 @@ body {
    
 }
 
+.marketingContainerReveal {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    grid-area: marketing;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 6 / 6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    color:  rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 40px;
+    background-color: rgb(10, 39, 78);
+    border-radius: 16px;
+}
+
+.moreBtnReveal {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    place-items: center;
+    border: none;
+    color: rgb(16, 49, 90);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+}
+
 .marketingContainer a {
     text-decoration: none;
     color: rgb(10, 39, 78);
@@ -215,12 +249,13 @@ body {
     border-radius: 50%;
     place-items: center;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(16, 49, 90);
     cursor: pointer;
     font-size: 30px;
     
 }
+
 .moreBtn:hover {
     font-size: 50px;
 
@@ -358,8 +393,6 @@ body {
     bottom: 0;
     right: 0;
 }
-
-
 
 .card-6 {
     height: 70dvh;
