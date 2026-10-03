@@ -14,6 +14,8 @@ const essentialCleaningReveal = document.getElementById('title5Reveal');
 // FULL DEEP CLEANING
 const fullDeepCleaningCard = document.getElementById('card-6');
 const fullDeepCleaningBtn = document.getElementById('mBtnc-6');
+const fullDeepCleaningTitle = document.getElementById('title6');
+const fullDeepCleaningReveal = document.getElementById('title6Reveal');
 
 // BREEZE BUDGET
 const breezeBudgetCard = document.getElementById('card-7');
@@ -36,8 +38,7 @@ moreBtn.addEventListener('click', ()=>{
     // Greeting Title Toggling
     theToggler(greetingTitle,'gTitle');
     theToggler(greetingMore,'gMoreInfo');
-    theToggler(greetingMore, 'gMoreInfoReveal');
-        
+    theToggler(greetingMore, 'gMoreInfoReveal');       
     
 });
 
@@ -45,24 +46,35 @@ moreBtn.addEventListener('click', ()=>{
 // ESSENTIAL CLEANING CARD #5
 essentialCleaningBtn.addEventListener('click',()=>{
     // BUTTONS INTERACTION
-    theToggler(essentialCleaningBtn, 'mBtn');
     theToggler(essentialCleaningBtn,'xServBtnsReveal');
 
     // CARDS INTERACTION
     theToggler(essentialCleaningCard, 'lobbyCards');
     theToggler(essentialCleaningCard, 'xSReveal');
 
-    //PARAGRAPH INTERACTION
+    // PARAGRAPH INTERACTION
     theToggler(essentialCleaningTitle, 'hideTitle');
     theToggler(essentialCleaningReveal,'hideTitle');
     theToggler(essentialCleaningReveal, 'paragraphReveal');
     
 });
 
+// FULL DEEP CLEANING CARD #6
 fullDeepCleaningBtn.addEventListener('click', ()=>{
-    console.log('This is the full deep cleaning button');
+    // BUTTONS INTERACTION
+    theToggler(fullDeepCleaningBtn,'xServBtnsReveal');
+
+    // CARD INTERACTION
+    theToggler(fullDeepCleaningCard,'lobbyCards');
+    theToggler(fullDeepCleaningCard,'xSReveal');
+
+    // PARAGRAPH INTERACTION
+    theToggler(fullDeepCleaningTitle,'hideTitle');
+    theToggler(fullDeepCleaningReveal,'hideTitle');
+    theToggler(fullDeepCleaningReveal,'paragraphReveal');
 });
 
+// BREEZE BUDGET CARD #7
 breezeBudgetBtn.addEventListener('click', ()=>{
     console.log('This is the breezebudget button');
 });
