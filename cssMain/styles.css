@@ -84,6 +84,10 @@ body {
   } 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER STYLES */
 .headerContainer {
     font-family: "Inter", sans-serif;
@@ -95,9 +99,11 @@ body {
     background-color: rgb(16, 49, 90);
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
    
 }
-
 
 /* NAV STYLES */
 .headerNav ul {
@@ -126,15 +132,15 @@ body {
     
 }
 
-#servicesLink {
-    /* background-color: lightcoral; */
-    grid-area: b;
+#phoneLink {
+    /* background-color: gray; */
+    grid-area: a;
+    
 }
 
-#aboutLink {
-    /* background-color: gray; */
+#servicesLink {
+    /* background-color: lightcoral; */
     grid-area: c;
-    
 }
 
 #estimateLink {
@@ -178,6 +184,7 @@ body {
     grid-template-areas: 
         'left marketing right';
     padding: 40px 20px;
+    scroll-margin-top: 100px;
 
 }
 
@@ -296,6 +303,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
+    scroll-margin-top: 100px;
    
 }
 
@@ -505,6 +513,7 @@ body {
     height: 95dvh;
     grid-template-columns: 1.5fr 2.5fr;
     grid-template-areas: 'a b';
+    scroll-margin-top: 100px;
 }
 
 
@@ -533,6 +542,11 @@ body {
     font-size: 0.5em;
     font-weight: normal;
     text-align: left;
+    color: black;
+}
+
+.card-8 a {
+    text-decoration: none;
     color: black;
 }
 

@@ -20,6 +20,8 @@ const fullDeepCleaningReveal = document.getElementById('title6Reveal');
 // BREEZE BUDGET
 const breezeBudgetCard = document.getElementById('card-7');
 const breezeBudgetBtn = document.getElementById('mBtnc-7');
+const breezeBudgetTitle = document.getElementById('title7');
+const breezeBudgetReveal = document.getElementById('title7Reveal');
 
 // CLASS TOGGLER FUNCTION
 function theToggler (itemName,className){
@@ -76,7 +78,17 @@ fullDeepCleaningBtn.addEventListener('click', ()=>{
 
 // BREEZE BUDGET CARD #7
 breezeBudgetBtn.addEventListener('click', ()=>{
-    console.log('This is the breezebudget button');
+    // BUTTONS INTERACTION
+    theToggler(breezeBudgetBtn,'xServBtnsReveal');
+
+    // CARD INTERACTION
+   theToggler(breezeBudgetCard,'lobbyCards');
+   theToggler(breezeBudgetCard,'xSReveal');
+
+   // PARAGRAPH INTERACTION
+   theToggler(breezeBudgetTitle,'hideTitle');
+   theToggler(breezeBudgetReveal,'hideTitle');
+   theToggler(breezeBudgetReveal, 'paragraphReveal');
 });
 
 

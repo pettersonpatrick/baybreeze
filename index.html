@@ -17,28 +17,28 @@
 <body>
     
     <header class="headerContainer">
-        <nav class="headerNav">
+        <nav id='headerNav' class="headerNav">
             <ul class="linksList">
-                <li id='servicesLink'>
-                    <a href="#" class="navLink">SERVICES</a>
+                <li id="phoneLink">
+                    <a href="tel:+12392686008"  class="navLink">&#128222; (239) 268-6008 </a>
                 </li>
-                <li id="aboutLink">
-                    <a href="#" class="navLink">ABOUT US</a>
+                <li id='servicesLink'>
+                    <a href="#lobbyContainer" class="navLink">SERVICES</a>
                 </li>
                 <li id="estimateLink">
-                    <a href="#"  class="navLink">GET ESTIMATE</a>
+                    <a href="#requestContainer"  class="navLink">GET ESTIMATE</a>
                 </li>
             </ul>
         </nav>
 
-        <a href='#' class="logoContainer">
+        <a href='#presentationContainer' class="logoContainer">
             <img id="logo" src="imgs/logo_circle.png" alt="Bay Breeze Cleaning Logo">
         </a>
     </header>
     
     <main class="mainContainer">
 
-        <section class="presentationContainer">
+        <section id="presentationContainer" class="presentationContainer">
             <div id='mktContainer' class="marketingContainer">
                 <p id="gTitle">
                     Bay Breeze
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="lobbyContainer">
+        <section id="lobbyContainer" class="lobbyContainer">
             <p class="lobbyTitle">What the Mix & Match Package offer.</p>
             <div class="box">
                 <div class="lobbyCards card-1">
@@ -114,7 +114,7 @@
                         <br>
                         How it works: We begin with a free assessment to discuss your needs. Our deep cleaning service covers everything from top to bottom—including inside the fridge, oven, cabinets, drawers, ceiling fans, blinds, and sliding glass doors—but we tailor it to your preferences. Perfect for those wanting a thorough, room-by-room clean.
                         <br>
-                        Click “Get Estimate” to schedule your free assessment today.
+                        <!-- Click “Get Estimate” to schedule your free assessment today. -->
                     </p>
 
                     <button id='mBtnc-6' class="xServBtns">
@@ -124,14 +124,21 @@
                 </div>
 
                 <div id='card-7' class="lobbyCards card-7">
-                    <p>Breeze Budget</p>
+
+                    <p id="title7">Breeze Budget</p>
+
+                    <p id="title7Reveal" class="hideTitle">
+                        Our Breeze Budget service offers two hours of cleaning (or one hour with two technicians) to fit your budget and busy schedule. We provide any type of cleaning within that time frame—whether it's quick vacuuming and mopping or a deep clean in a single room. If more time is needed, we'll communicate in advance, and any additional hour costs $39.50 per person.
+                    </p>
+
                     <button id='mBtnc-7' class="xServBtns">
                     +
-                    </button>                    
+                    </button>       
+
                 </div>              
 
             </div>
-            <section class="requestContainer">
+            <section id="requestContainer" class="requestContainer">
                 <div class="lobbyCards card-8">
                     <h1>Get a Free Estimate</h1>
                     <p>"With more than two decades of experience in New England, Bay Breeze Cleaning is now proud to serve South West Florida.
@@ -140,7 +147,7 @@
                     <p> 
                     We offer our cleaning services throughout Cape Coral, Sarasota, Pine Island, Fort Myers, Sanibel, Naples and Bonita Springs, while staying true to the core values that define who we are and what we do."</p>
                     <p>&#x1F4CD; Cape Coral FL</p>
-                    <a id="callLink5" href="tell:+12392686008">&#128222; (239) 268-6008 </a>
+                    <a id="callLink5" href="tel:+12392686008">&#128222; (239) 268-6008 </a>
                     <img id='lcard8img'src="imgs/lobbycard5_gif.gif">
                 </div>
                 <div class="jobberReq">
