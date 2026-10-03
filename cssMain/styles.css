@@ -240,7 +240,34 @@ body {
     color: rgb(10, 39, 78);
 }
 
-.moreBtn {
+.marketingContainerReveal a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.gTitle {
+    display: none;
+}
+
+#gMoreInfo {
+    /* color: rgb(255, 255, 255); */
+    font-weight: normal;
+    font-size: 0.7em;
+    
+}
+
+.gMoreInfoReveal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.gMoreInfo {
+    display: none;
+}
+
+.mBtn {
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -256,7 +283,7 @@ body {
     
 }
 
-.moreBtn:hover {
+.moreBtn:hover, .moreBtnReveal:hover {
     font-size: 50px;
 
 }
