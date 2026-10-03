@@ -1,6 +1,19 @@
 <div id="af431aa0-edb4-44b0-9f6b-677039ba61ba-5141122"></div>
                 <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
 
+
+DAY MODE:
+
+colorPallette{
+    Dark Blue: rgb(10, 39, 78) - Used for the text and the wave icon details.
+
+Off-White: rgb(255, 255, 255) - Used for the main background.
+
+Embossed Blue: RGB (16, 49, 90) - Used for the background and embossed waves on the left.
+} */
+
+
+
 Night Mode Color Pallette:
 To create a professional night mode for this design, you want to avoid pure black. Because "Bay Breeze" has a coastal, water-based identity, using deep, desaturated slate-blues will make the dark mode feel cohesive with your brand while reducing eye strain.
 

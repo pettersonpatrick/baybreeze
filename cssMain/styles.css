@@ -64,7 +64,7 @@ a img {
 /* START PROJECT STYLES */
 /* 
 colorPallette{
-    Dark Blue: RGB (10, 39, 78) - Used for the text and the wave icon details.
+    Dark Blue: rgb (10, 39, 78) - Used for the text and the wave icon details.
 
 Off-White: RGB (255, 255, 255) - Used for the main background.
 
@@ -170,7 +170,7 @@ body {
 }
 
 
-/* PRESENTATION CONTAINER */
+/* PRESENTATION CONTAINER STYLES */
 .presentationContainer {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
@@ -250,7 +250,6 @@ body {
 }
 
 #gMoreInfo {
-    /* color: rgb(255, 255, 255); */
     font-weight: normal;
     font-size: 0.7em;
     
@@ -283,13 +282,13 @@ body {
     
 }
 
-.moreBtn:hover, .moreBtnReveal:hover {
+.mBtn:hover, .moreBtnReveal:hover {
     font-size: 50px;
 
 }
 
 
-/* LOBBY CONTAINER & CARDS */
+/* LOBBY CONTAINER & CARDS STYLES */
 .lobbyContainer {
     font-family: "Inter", sans-serif;
     display: flex;
@@ -297,10 +296,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
-    /* background-color: rgba(38, 20, 41, 0.06); */
-    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
-    grid-template-areas: 
-        'left lobby right';
+   
 }
 
 .lobbyTitle {
@@ -338,7 +334,7 @@ body {
 
 }
 
-.lobbyCards a {
+.lobbyCards p {
     text-decoration: none;
     color: rgb(10, 39, 78);
 }
@@ -421,11 +417,89 @@ body {
     right: 0;
 }
 
+/* EXTRA SERVICES CARDS STYLES */
+
+.xSReveal {
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 20px 20px;
+    background-color: rgb(10, 39, 78);
+    height: 35dvh;
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    overflow: hidden;
+}
+
+.xServBtns {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    place-items: center;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 49, 90);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.xServBtnsReveal {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    place-items: center;
+    border: none;
+    color: rgb(16, 49, 90);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.xServBtns:hover, .xServBtnsReveal:hover {
+    font-size: 25px;
+    color: orangered;
+}
+
+.card-5 {
+    height: 15dvh;
+    flex-basis: 100%;
+    order: 5;
+}
+
+.hideTitle {
+    display: none;
+}
+
+
+.paragraphReveal {
+    color: rgb(255, 255, 255);
+    font-size: 0.5em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+}
 .card-6 {
-    height: 70dvh;
-    flex-basis: 60%;
+    height: 15dvh;
+    flex-basis: 100%;
     order: 6;
 }
+.card-7 {
+    height: 15dvh;
+    flex-basis: 100%;
+    order: 7;
+}
+
+/* REQUEST CONTAINER STYLES*/
 
 .requestContainer {
     display: grid;
@@ -442,7 +516,7 @@ body {
     scrollbar-width:none;  
 }
 
-.card-5 {
+.card-8 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -450,11 +524,11 @@ body {
     height: 80dvh;
     width: 23dvw;
     flex-basis: 30%;
-    order: 5;
+    order: 8;
     
 }
 
-.card-5 p{
+.card-8 p{
     top: 3em;
     /* border: solid 1px red; */
     font-size: 0.5em;
@@ -463,7 +537,7 @@ body {
     color: black;
 }
 
-#lcard5img {
+#lcard8img {
     height:  350px;
     width: 350px;
     border-radius: 50%;
