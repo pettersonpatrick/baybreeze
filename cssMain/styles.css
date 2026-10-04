@@ -568,15 +568,68 @@ html {
 /* FOOTER STYLES */
 .footer {
     font-family: "Inter", sans-serif;
-    font-weight: bold;
-    display: flex;
-    min-height: 20dvh;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+    'a b c'
+    'd b c';
+    min-height: 30dvh;
     background-color: rgb(16, 49, 90);
     padding: 40px 20px;
     color: rgb(255, 255, 255);
     font-size: 1em;
+    line-height: 1.2;
 }
+
+.socials {
+    grid-area: a;
+    /* background-color: white; */
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.75em;
+}
+
+.olLogo {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.olLogo img{
+    height: 150px;
+    width: auto;
+}
+
+.pmtMethods {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    max-width: 20dvw;
+   
+}
+
+#cardTitle {
+    font-weight: bold;
+}
+
+.pmtCards {        
+    display: flex;    
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;  
+
+}
+
+.pmtCards img {
+    height: 50px;
+    width: auto;
+    
+}
+
 
