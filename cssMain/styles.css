@@ -474,7 +474,6 @@ html {
 
 .xServBtns:hover, .xServBtnsReveal:hover {
     font-size: 25px;
-    color: orangered;
 }
 
 .card-5 {
@@ -671,7 +670,8 @@ html {
 
     #estimateLink {
         grid-area: a;
-        font-size: 1em;
+        font-size: 0.9em;
+        white-space: nowrap;
         
     }
 
@@ -684,7 +684,7 @@ html {
     display: grid;
     grid-template-columns: minmax(auto, 1200px);
     height: auto;
-    min-height: 70dvh;
+    min-height: 100dvh;
     grid-template-areas: 
         'marketing';
     padding: 40px 20px;
@@ -695,16 +695,16 @@ html {
     .marketingContainer {
         width: 100%;
         max-width: 300px;
-        height: 600px;
+        height: 500px;
         font-size: 4em;
-        padding: 20px;
+        padding-top: 1em;
 
     }
 
     .marketingContainerReveal {
         width: 100%;
         max-width: 300px;
-        height: 600px;
+        height: 500px;
         font-size: 1.5em;
         padding: 20px;       
 
@@ -731,6 +731,7 @@ html {
     }
 
     .card-2 {
+        display:none;
         font-size: 0.9em;
         flex-basis: 15%;
         height: 20dvh;
@@ -748,14 +749,18 @@ html {
     .card-3 {
         font-size: 1.3em;
         height: 20dvh;
-        flex-basis: 50%;
+        flex-basis: 100%;
         order: 3;
     }
 
-    #lcardimg3 {
+    #lcardimg3 {    
         height:  200px;
         width: 200px;
-        margin: 1.5em 0em 3em 2.5em;
+        left: -1em;
+        top: -1em;
+        right: em;
+    
+        
     }
 
     .card-4 {
@@ -778,18 +783,17 @@ html {
     }
 
     .card-5, .card-6, .card-7 {
-        height: 30dvh;    
+        height: 35dvh;    
     }
 
     /* REQUEST CONTAINER */
+
     .requestContainer {
-        display: grid;
-        gap: 15px;
-        height: 180dvh;
-        grid-template-columns: 1.5fr 2.5fr;
-        grid-template-areas: 
-        'a a'
-        'b b';
+        grid-template-columns: auto;
+        grid-template-areas:'a'
+                            'b';
+        height: 200dvh;
+        line-height: 1.2;
         scroll-margin-top: 100px;
     }
 
@@ -798,19 +802,19 @@ html {
         flex-direction: column;
         justify-content: space-evenly;
         background-color: transparent;
-        height: 60dvh;
+        height: 80dvh;
         width: 80dvw;
         flex-basis: 50%;
-        order: 8;
+       
     
     }
 
     #lcard8img {
-        height:  250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
         border-radius: 50%;
-        align-self: center;  
-    }
+        align-self: center;
+    } 
 
     /* FOOTER CONTAINER */
     .footer {
@@ -838,7 +842,5 @@ html {
         height: 150px;
         width: auto;
     }
-
-
 
 }
